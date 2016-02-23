@@ -38,7 +38,6 @@ public class MidiPlayer extends CordovaPlugin
             {
                 FileInputStream fis = new FileInputStream(filePath);
                 mediaPlayer.setDataSource(fis.getFD());
-                descriptor.close();
                 mediaPlayer.prepare();
                 mediaPlayer.start();
             }
