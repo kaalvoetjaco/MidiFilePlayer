@@ -36,8 +36,8 @@ public class MidiPlayer extends CordovaPlugin
         {
             try
             {
-                AssetFileDescriptor descriptor = context.getAssets().openFd(filename);
-                mediaPlayer.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+                FileInputStream fis = new FileInputStream(filePath);
+                mediaPlayer.setDataSource(fis.getFD());
                 descriptor.close();
                 mediaPlayer.prepare();
                 mediaPlayer.start();
@@ -82,7 +82,7 @@ public class MidiPlayer extends CordovaPlugin
             callbackContext.success("Not implemented for android yet. This method has no effect.");
             return true;
         }
-            
+
         callbackContext.error("Unknown method");
         return false;
     }
