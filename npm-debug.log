@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/usr/local/opt/nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/kasi/Repositories/MidiFilePlayer',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/kasi/.npm/midi-file-player/3.1.0/package.tgz not in flight; packing
+9 info lifecycle midi-file-player@3.1.0~prepublish: midi-file-player@3.1.0
+10 silly lifecycle midi-file-player@3.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/kasi/.npm/midi-file-player/3.1.0/package.tgz',
+11 verbose tar pack   '/Users/kasi/Repositories/MidiFilePlayer' ]
+12 verbose tarball /Users/kasi/.npm/midi-file-player/3.1.0/package.tgz
+13 verbose folder /Users/kasi/Repositories/MidiFilePlayer
+14 verbose addLocalTarball adding from inside cache /Users/kasi/.npm/midi-file-player/3.1.0/package.tgz
+15 silly cache afterAdd midi-file-player@3.1.0
+16 verbose afterAdd /Users/kasi/.npm/midi-file-player/3.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/kasi/.npm/midi-file-player/3.1.0/package/package.json written
+18 silly publish { name: 'midi-file-player',
+18 silly publish   version: '3.1.0',
+18 silly publish   description: 'Play Midi files on iOS and Android',
+18 silly publish   cordova: { id: 'smiled0g.midiplayer', platforms: [ 'android', 'ios' ] },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/smiled0g/MidiFilePlayer.git' },
+18 silly publish   keywords: [ 'ecosystem:cordova', 'cordova-android', 'cordova-ios' ],
+18 silly publish   engines: [ { name: 'cordova', version: '>=3.0.0' } ],
+18 silly publish   author: { name: 'Normann Eiland, Kasi Chonpimai' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/smiled0g/MidiFilePlayer/issues' },
+18 silly publish   homepage: 'https://github.com/smiled0g/MidiFilePlayer#readme',
+18 silly publish   readme: '# MidiFilePlayer\n\nPhonegap plugin that plays midi file on iOS using a soundfont\n\nPlease refer to the sample directory if you need help learning how to use it\n\nNow working on Android and iOs.',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'f225b9f732a093d18cbfc673d90835cf23cd620c',
+18 silly publish   _id: 'midi-file-player@3.1.0',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '3e4e247d6a9116f30fec90c0485ad13e27997390',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name midi-file-player
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/midi-file-player
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/kasi/.npm/midi-file-player/3.1.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/midi-file-player
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 3:50:41 PM
+29 verbose request using bearer token for auth
+30 verbose request id 775996cd9a73dd43
+31 http request PUT https://registry.npmjs.org/midi-file-player
+32 http 403 https://registry.npmjs.org/midi-file-player
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 01 Mar 2016 20:51:09 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-ord1726-ORD',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1456865442.031875,VS0,VE27505' }
+34 verbose request invalidating /Users/kasi/.npm/registry.npmjs.org/midi-file-player on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 3.1.0." : midi-file-player
+36 verbose stack     at makeError (/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid midi-file-player
+39 verbose cwd /Users/kasi/Repositories/MidiFilePlayer
+40 error Darwin 15.3.0
+41 error argv "/usr/local/Cellar/nvm/0.25.4/versions/node/v5.0.0/bin/node" "/usr/local/opt/nvm/versions/node/v5.0.0/bin/npm" "publish"
+42 error node v5.0.0
+43 error npm  v3.3.6
+44 error code E403
+45 error "You cannot publish over the previously published version 3.1.0." : midi-file-player
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
