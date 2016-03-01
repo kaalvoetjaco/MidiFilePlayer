@@ -1,9 +1,9 @@
 {
-  "name": "midi-file-player",
-  "version": "3.1.1",
+  "name": "cordova-plugin-midi-player",
+  "version": "1.0.0",
   "description": "Play Midi files on iOS and Android",
   "cordova": {
-    "id": "smiled0g.midiplayer",
+    "id": "cordova-plugin-midi-player",
     "platforms": [
       "android",
       "ios"
