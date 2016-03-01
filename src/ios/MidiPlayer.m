@@ -160,13 +160,13 @@ BOOL paused = NO;
     NewMusicSequence(&ms);
     
     NSURL * midiFileURL;
-    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
-    NSString *documentsDirectory = [pathArray objectAtIndex:0];
-    NSString *midiPath = [documentsDirectory stringByAppendingPathComponent:path];
+    // NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
+    // NSString *documentsDirectory = [pathArray objectAtIndex:0];
+    // NSString *midiPath = [documentsDirectory stringByAppendingPathComponent:path];
     
-    if ([[NSFileManager defaultManager] fileExistsAtPath:midiPath])
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
     {
-        midiFileURL = [NSURL fileURLWithPath:midiPath isDirectory:NO];
+        midiFileURL = [NSURL fileURLWithPath:path isDirectory:NO];
     } else {
         return NO;
     }
