@@ -24,7 +24,11 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "Normann Eiland, Kasi Chonpimai",
+  "author": "Normann Eiland",
+  "contributors": [
+    "Kasi Chonpimai",
+    "Sorawit Suriyakarn"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/smiled0g/MidiFilePlayer/issues"
