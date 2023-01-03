@@ -9,13 +9,7 @@ var MidiPlayer = function () {};
 
 MidiPlayer.prototype = {
     getPathFromAsset: function(path) {
-        if(device.platform == "Android")
-        {
-            return "www/"+path;
-        }
-        var finalPath = cordova.file.applicationDirectory + "www/" + path;
-        finalPath = finalPath.substr(7);
-        return finalPath;
+        return path;
     },
     setup: function (midiFilePath, programs, success, error, status) {
         exec2("setup", [midiFilePath, programs], function (statusValue) {
